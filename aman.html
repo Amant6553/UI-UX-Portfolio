@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI/UX Portfolio</title>
     <link rel="stylesheet" href="style.css">
@@ -9,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
 <body>
-<!-- Navbar -->
+  <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container">
       <!-- Logo -->
@@ -45,172 +48,161 @@
   </div>
 </nav>
        
-   <div style="background-color: black; padding: 50px 0;">
-    <div class="text-center">
+<div style="background-color: black; padding: 50px 0;">
+  <div class="container text-center">
       <button type="button" class="btn btn-dark mb-4" style="font-size: 24px; padding: 10px 20px;">Hello, I'm Aman</button>
-      <h1 style="font-size: 96px; color: white; margin-top: 20px;">
-        <b>UI/UX Designer</b>
-      </h1> make this part responive 
-      <p style="color: white; font-size: 48px; margin-top: 10px;">
-        Crafting clean & modern design
+      <h1 class="display-1 text-white mb-4"> <!-- Use Bootstrap's display class for responsive headings -->
+          <b>UI/UX Designer</b>
+      </h1>
+      <p class="text-white" style="font-size: 2rem; margin-top: 10px;"> <!-- Use rem for better scaling -->
+          Crafting clean & modern design
       </p>
-            <div class="text-center">
-        <img src="./images/3d-symbol-glass-logo-made-blender_1029878-13-removebg-preview.png" alt="" class="rotate-animation">
+      <div class="text-center">
+          <img src="./images/3d-symbol-glass-logo-made-blender_1029878-13-removebg-preview.png" alt="" class="rotate-animation img-fluid" style="max-width: 100%; height: auto;"> <!-- Use img-fluid for responsive images -->
       </div>
-
-
-           <!-- About Me Section -->
-<div class="about-heading-container text-center">
+  </div>
+</div>
+         <!-- About Me Section -->
+<div class="about-heading-container text-center mb-4">
   <h2 class="about-heading">About Me</h2>
 </div>
-<p class="bold-serif-text">
+
+<p class="bold-serif-text text-center mb-4">
   Designing products that not only look incredible but also drive 
   results, ensuring satisfaction on both sides. Say goodbye to 
   designs that only serve one purpose. With my UI/UX skills, your 
   brand is set to scale to new heights!
 </p>
 
-<div class="about-container d-flex flex-wrap">
+<div class="container about-container d-flex flex-wrap justify-content-center">
   <!-- Profile Image Section -->
-  <div class="about-image d-flex align-items-center justify-content-center">
-      <img src="images/profile.png" alt="Profile Picture">
+  <div class="about-image d-flex align-items-center justify-content-center col-md-4 mb-4">
+      <img src="images/profile.png" alt="Profile Picture" class="img-fluid rounded-circle"> <!-- Added img-fluid for responsiveness -->
   </div>
 
   <!-- Content Section -->
-  <div class="about-content">
+  <div class="about-content col-md-6 mb-4"> <!-- Adjusted column size -->
       <h2>I'm a UI/UX Designer</h2>
       <p>I bring a unique perspective to UI/UX design, merging aesthetics, usability, and innovation. My approach focuses on crafting seamless, user-centered experiences that balance form and function, transforming ideas into intuitive designs that resonate with users and elevate your brand.</p>
 
-      <div class="stats d-flex justify-content-around">
-          <div>
+      <div class="stats d-flex justify-content-around mb-4">
+          <div class="text-center">
               <div class="number">03+ Months</div>
               <div class="label">Years Of Experience</div>
           </div>
-          <div>
+          <div class="text-center">
               <div class="number">10+</div>
               <div class="label">Projects Completed</div>
           </div>
       </div>
 
-      <div class="tools-services d-flex justify-content-between mt-4">
+      <div class="tools-services d-flex flex-column flex-md-row justify-content-between mt-4">
           <!-- Tools Known -->
-          <div class="tools">
+          <div class="tools mb-4 mb-md-0">
               <h4>Tools Known</h4>
               <div class="icon-container d-flex justify-content-around">
-                  <div class="icon"><img src="images/figma.jpeg" alt="Figma"></div>
-                  <div class="icon"><img src="images/Canva.jpeg" alt="Canva"></div>
-                  <div class="icon"><img src="images/photoshop.jpeg" alt="Photoshop"></div>
+                  <div class="icon"><img src="images/figma.jpeg" alt="Figma" class="img-fluid"></div>
+                  <div class="icon"><img src="images/Canva.jpeg" alt="Canva" class="img-fluid"></div>
+                  <div class="icon"><img src="images/photoshop.jpeg" alt="Photoshop" class="img-fluid"></div>
               </div>
           </div>
           <!-- Services Offered -->
           <div class="services">
-            <h4>Services</h4>
-            <ul>
-                <li>Logo Design</li>
-                <li>Flyers</li>
-                <li>Poster</li>
-                <li>Web Design</li>
-                <li>Landing Page Design</li>
-            </ul>
+              <h4>Services</h4>
+              <ul class="list-unstyled">
+                  <li>Logo Design</li>
+                  <li>Flyers</li>
+                  <li>Poster</li>
+                  <li>Web Design</li>
+                  <li>Landing Page Design</li>
+              </ul>
           </div>
-          
       </div>
   </div>
 </div>
-<!--Experience -->
-<div class="about-heading-container">
+          <!-- Experience Section -->
+<div class="about-heading-container text-center mb-4">
   <h2 class="about-heading">Experience</h2>
 </div>
-  <div class="experience-timeline position-relative">
+<div class="experience-timeline position-relative">
 
-      <!-- Experience Item -->
-      <div class="experience-item row mb-5">
-          <div class="col-3 text-end">
-              <h5>Eaglebyte Solution Pvt.Ltd</h5>
-              <p class="mb-0">(Jr. UI/UX Designer)</p>
-              <small>Aug 2024 - till now</small>
-          </div>
-          <div class="col-1 text-center position-relative">
-              <div class="timeline-circle"></div>
-              <div class="timeline-line"></div>
-          </div>
-          <div class="col-8">
-              <p>Creative and detail-oriented UI/UX Designer with a passion for crafting intuitive and user-centric digital experiences. Committed to continuous learning and staying updated with the latest design trends to create impactful and accessible interfaces.</p>
-          </div>
+  <!-- Experience Item -->
+  <div class="experience-item row mb-5">
+      <div class="col-md-3 col-sm-4 text-md-end text-center">
+          <h5>Eaglebyte Solution Pvt. Ltd</h5>
+          <p class="mb-0">(Jr. UI/UX Designer)</p>
+          <small>Aug 2024 - till now</small>
       </div>
-
-      <!-- Repeat similar blocks for each experience item -->
-      <div class="experience-item row mb-5">
-          <div class="col-3 text-end">
-              <h5>Intern Savy</h5>
-              <p class="mb-0">(Graphic Designer)</p>
-              <small>Nov 2023 - Dec 2023</small>
-          </div>
-          <div class="col-1 text-center position-relative">
-              <div class="timeline-circle"></div>
-              <div class="timeline-line"></div>
-          </div>
-          <div class="col-8">
-              <p>Contributed to client interactions, incorporating feedback to deliver creative solutions, and actively participated in professional development opportunities to enhance design skills.</p>
-          </div>
-      </div>
-
-      <div class="experience-item row mb-5">
-        <div class="col-3 text-end">
-            <h5>Nblik</h5>
-            <p class="mb-0">(Community manager 
-              Intern)</p>
-            <small>Aug 2023 - Nov 2023</small>
-        </div>
-        <div class="col-1 text-center position-relative">
-            <div class="timeline-circle"></div>
-            <div class="timeline-line"></div>
-        </div>
-        <div class="col-8">
-            <p> Fostered online community engagement through social 
-              media platforms,  responding to inquiries, moderating 
-              discussions, and creating content that  enhanced brand 
-              presence.</p>
-        </div>
-    </div>
-
-    <div class="experience-item row mb-5">
-      <div class="col-3 text-end">
-          <h5> P.S.Technologies </h5>
-          <p class="mb-0">(Software Developer 
-            Intern)</p>
-          <small>Feb 2023 - Mar 2023</small>
-      </div>
-      <div class="col-1 text-center position-relative">
+      <div class="col-md-1 text-center position-relative">
           <div class="timeline-circle"></div>
           <div class="timeline-line"></div>
       </div>
-      <div class="col-8">
-          <p> Developed a solid understanding of web application 
-            development technologies,  including Java Server 
-            Pages (JSP) and Java-based backend frameworks 
-            (Model  View-Controller (MVC) architectural pattern)</p>
+      <div class="col-md-8 col-sm-7">
+          <p>Creative and detail-oriented UI/UX Designer with a passion for crafting intuitive and user-centric digital experiences. Committed to continuous learning and staying updated with the latest design trends to create impactful and accessible interfaces.</p>
+      </div>
+  </div>
+
+  <!-- Repeat similar blocks for each experience item -->
+  <div class="experience-item row mb-5">
+      <div class="col-md-3 col-sm-4 text-md-end text-center">
+          <h5>Intern Savy</h5>
+          <p class="mb-0">(Graphic Designer)</p>
+          <small>Nov 2023 - Dec 2023</small>
+      </div>
+      <div class="col-md-1 text-center position-relative">
+          <div class="timeline-circle"></div>
+          <div class="timeline-line"></div>
+      </div>
+      <div class="col-md-8 col-sm-7">
+          <p>Contributed to client interactions, incorporating feedback to deliver creative solutions, and actively participated in professional development opportunities to enhance design skills.</p>
       </div>
   </div>
 
   <div class="experience-item row mb-5">
-    <div class="col-3 text-end">
-        <h5> Oasis Infobyte </h5>
-        <p class="mb-0">(Graphic Designer 
-          Intern)</p>
-        <small>Dec 2022 - Jan 2023</small>
-    </div>
-    <div class="col-1 text-center position-relative">
-        <div class="timeline-circle"></div>
-        <div class="timeline-line"></div>
-    </div>
-    <div class="col-8">
-        <p> Contributed to client interactions by gathering and incorporating feedback to deliver creative solutions. Actively participated in professional development opportunities to enhance design skills, including the creation of logos, flyers, posters, and brochures.</p>
-    </div>
+      <div class="col-md-3 col-sm-4 text-md-end text-center">
+          <h5>Nblik</h5>
+          <p class="mb-0">(Community Manager Intern)</p>
+          <small>Aug 2023 - Nov 2023</small>
+      </div>
+      <div class="col-md-1 text-center position-relative">
+          <div class="timeline-circle"></div>
+          <div class="timeline-line"></div>
+      </div>
+      <div class="col-md-8 col-sm-7">
+          <p>Fostered online community engagement through social media platforms, responding to inquiries, moderating discussions, and creating content that enhanced brand presence.</p>
+      </div>
+  </div>
+
+  <div class="experience-item row mb-5">
+      <div class="col-md-3 col-sm-4 text-md-end text-center">
+          <h5>P.S. Technologies</h5>
+          <p class="mb-0">(Software Developer Intern)</p>
+          <small>Feb 2023 - Mar 2023</small>
+      </div>
+      <div class="col-md-1 text-center position-relative">
+          <div class="timeline-circle"></div>
+          <div class="timeline-line"></div>
+      </div>
+      <div class="col-md-8 col-sm-7">
+          <p>Developed a solid understanding of web application development technologies, including Java Server Pages (JSP) and Java-based backend frameworks (Model View-Controller (MVC) architectural pattern).</p>
+      </div>
+  </div>
+
+  <div class="experience-item row mb-5">
+      <div class="col-md-3 col-sm-4 text-md-end text-center">
+          <h5>Oasis Infobyte</h5>
+          <p class="mb-0">(Graphic Designer Intern)</p>
+          <small>Dec 2022 - Jan 2023</small>
+      </div>
+      <div class="col-md-1 text-center position-relative">
+          <div class="timeline-circle"></div>
+          <div class="timeline-line"></div>
+      </div>
+      <div class="col-md-8 col-sm-7">
+          <p>Contributed to client interactions by gathering and incorporating feedback to deliver creative solutions. Actively participated in professional development opportunities to enhance design skills, including the creation of logos, flyers, posters, and brochures.</p>
+      </div>
+  </div>
 </div>
-
-
-
 <!--portolfio section starts here -->
 <div class="about-heading-container">
   <h2 class="about-heading">Portfolio</h2>
@@ -405,8 +397,7 @@
                     </div>
                   </div>
                 </div>    
-               
-              <!--Landing Page Button-->
+                <!--Landing Page Button-->
               < <div class="about-heading-container">
                 <h2 class="about-heading">Landing Pages Design</h2>
               </div>
@@ -476,11 +467,7 @@
                   </div>
                 </div>
               </div>
-
-
-
-
-<!---Why MeSection-->
+              <!---Why MeSection-->
 <section class="why-me-section text-center py-5">
   <h2 class="section-title mb-5">Why Me?</h2>
   <div class="container">
@@ -517,78 +504,51 @@
           </div>
       </div>
   </div>
-
   <!--Contact Us Section-->
 
-  <section class="contact-section text-center">
+  <section class="contact-section text-center mb-5">
     <div class="contact-content">
         <h2 class="contact-title">Contact Me</h2>
         <h1 class="contact-heading">Let's Get in Touch</h1>
         <p class="contact-subtitle">Let’s connect and start with your project ASAP</p>
         
         <!-- Buttons -->
-        <div class="button-container">
+        <div class="button-container mb-4">
             <a href="#" class="btn btn-se">Book a Call</a>
             <a href="images/UI UX Resume.pdf" class="btn btn-primary" download>Download Resume</a>
         </div>
 
         <!-- Email -->
-        <p class="contact-email">or email <a href="mailto:Tiwariaman0305@gmail.com">Tiwariaman0305@gmail.com</a></p>
+        <p class="contact-email mb-4">or email <a href="mailto:Tiwariaman0305@gmail.com">Tiwariaman0305@gmail.com</a></p>
         
         <!-- Social Links -->
-        <div class="social-links d-flex justify-content-between">
-            <div class="profile-info">
-                <img src="images/profile.png" alt="Aman Tiwari" class="profile-img">
+        <div class="social-links d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="profile-info text-center mb-4 mb-md-0">
+                <img src="images/profile.png" alt="Aman Tiwari" class="profile-img img-fluid rounded-circle" style="max-width: 150px;"> <!-- Responsive image -->
                 <p class="name">Aman Tiwari</p>
                 <p class="title">UI/UX Designer</p>
                 <p><a href="mailto:Tiwariaman0305@gmail.com">Tiwariaman0305@gmail.com</a></p>
             </div>
-            <div class="social-links d-flex justify-content-around"> 
-              <div class="links d-flex flex-column text-start">
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact Me</a>
+            <div class="social-links d-flex flex-column flex-md-row text-center">
+                <div class="links d-flex flex-column text-start mb-4 mb-md-0">
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="links d-flex flex-column">
+                    <a href="https://www.linkedin.com/in/aman-tiwari-9a2267218" target="_blank">LinkedIn</a>
+                    <a href="https://www.behance.net/c18amantiwari" target="_blank">Behance</a>
+                </div>
             </div>
-            <div class="links d-flex flex-column">
-                <a href="https://www.linkedin.com/in/aman-tiwari-9a2267218"  target="_blank">LinkedIn</a>
-                <a href="https://www.behance.net/c18amantiwari" target="_blank">Behance</a>
-            </div>
-            </div>
+        </div>
+    </div>
+</section>
             
         </div>
     </div>
 </section>
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-       
-
-
-               <div></div>                    
-                    </div>
-                     </div>
-              </div>
-            </div>
-          </div>
-        </div>
-     </div>
-    
-     
-    </div>
-
-    
-
 <!-- Scripts for Bootstrap (necessary for responsive behavior) -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
-
-   
