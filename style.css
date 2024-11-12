@@ -1,0 +1,632 @@
+.navbar .nav-link {
+    font-family: "Inria Serif", serif;
+}
+.root{
+    --primary-color:#0000;
+    --seondary-color:#3C3939;
+    --bg-white:#0000;
+    --gardient-color:linear-gradient(-224deg, var(--primary--color) 0, #3C3939 100%) ;
+}
+.main-btn{
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    padding: 10px 27px;
+    background-color: transparent;
+    border: 2px solid var(--gray-color);
+    color: var(--gray-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.main-btn:hover{
+    background-color: var(--primary-color);
+    border-color:var(--primary-color) ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .projects-section, .landing-pages {
+    background-color: #ffffff;
+  }
+  
+  .project-card, .landing-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Custom button styling */
+  .custom-btn {
+    font-size: 30px;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+  }
+
+  /* Button hover effect */
+  .custom-btn:hover {
+    color: black;
+    background-color: white;
+  }
+
+  /* Arrow styling */
+  .arrow-up {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+  
+          
+  /* Define the rotation animation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Apply the rotation animation to the image */
+  .rotate-animation {
+    animation: rotate 10s linear infinite; /* Adjust speed by changing '5s' */
+  }
+
+
+/* Card styling  (Portfolio designs)*/
+.custom-card {
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
+  overflow: hidden;
+  position: relative;
+  height: 500px; /* Set card height to control the visible area */
+}
+
+.card-image img {
+  transition: transform 10s ease;
+  width: 100%;
+  height: auto;
+}
+
+.custom-card:hover .card-image img {
+  transform: translateY(-100%); /* Scroll entire image upwards on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Card styling (Lanidng page*/
+/* Card styling */
+
+.custom-card {
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
+  overflow: hidden;
+  position: relative;
+  height: 300px; /* Set card height to control the visible area */
+}
+
+.card-image img {
+  transition: transform s ease;
+  width: 100%;
+  height: auto;
+}
+
+.custom-card:hover .card-image img {
+  transform: translateY(-100%); /* Scroll entire image upwards on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card:hover .overlay {
+  opacity: 1;
+}
+
+
+<!--About me>
+/* About Me Section Styling */
+
+.about-heading-container {
+  margin-top: 50px;
+}
+
+/* Apply to the specific text */
+.bold-serif-text {
+  font-family: 'Ineria Serif', serif; /* Apply Ineria Serif font */
+  font-weight: 1000; /* Ensure the text is bold */
+  font-size: 2em; /* Adjust size as needed */
+  color: #ffffff; /* Color can be adjusted as needed */
+  line-height: 1.5; /* Adjust line height for better readability */
+  text-align: center; /* Center-align text, optional */
+}
+
+/* Alternatively, if you want to apply the style globally */
+body {
+  font-family: 'Ineria Serif', serif;
+}
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(9, 9, 9, 0.4);
+  margin: 50px auto;
+  max-width: 1500px;
+}
+
+/* Profile Image Side */
+.about-image {
+  flex: 1;
+  min-width: 500px;
+  background: linear-gradient(145deg, #0000, #9999);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* Content Side */
+.about-content {
+  flex: 2;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.stats .number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.stats .label {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Tools and Services Section */
+.tools-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tools, .services {
+  width: 30%;
+}
+
+.tools h4, .services h4 {
+  font-size: 2rem;
+  color: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #444;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.icon img {
+  width: 95%;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background-color: #000;
+  box-shadow: 0 5px 10px rgba(1, 1, 1, 0.3);
+}
+
+.services ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px; /* Adjust space between grid items */
+  list-style: none;
+  padding: 0;
+  color: #ddd;
+}
+
+.services li {
+  margin: 0;
+  text-align: left; /* Left-align text inside list items */
+  transition: color 0.3s ease;
+}
+
+/* .services li:hover {
+  color: #0000;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+} */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+  }
+
+  .about-content, .about-image {
+      flex: 1 1 100%;
+  }
+}
+
+
+.about-heading-container {
+  background-color: black; /* Background color as black */
+  padding: 50px 0; /* Adds spacing around the heading */
+  text-align: center; /* Centers the heading */
+}
+
+.about-heading {
+  font-size: 48px;
+  font-weight: 900; /* Extra bold weight */
+  color: white;
+  margin: 0; /* Removes default margin */
+}
+
+<!--Experience section>
+body {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text for better contrast */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.experience-item h5 {
+  font-weight: bold;
+  color: #fff; /* White text for job title */
+  margin-bottom: 5px;
+}
+
+.experience-item small {
+  color: #bdbdbd; /* Light gray for date */
+}
+
+.experience-item p {
+  color: #e0e0e0; /* Slightly lighter text for description */
+}
+
+.experience-timeline {
+  padding-left: 20px;
+  border-left: 3px solid #ffffff33; /* Light vertical line for the timeline */
+  position: relative;
+}
+
+.timeline-circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-line {
+  width: 3px;
+  background-color: #ffffff33;
+  position: absolute;
+  top: 25px;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.experience-item:last-child .timeline-line {
+  display: none; /* Hide the line for the last item */
+}
+
+<!---Why me Section-->
+body {
+  background-color: #111; /* Dark background for contrast */
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.why-me-card {
+  background: linear-gradient(135deg, #555, #333);
+  color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 5rem;
+}
+
+.why-me-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Left mirror box with a gradient glass effect */
+.mirror-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Card body styling */
+.card-body {
+  text-align: center;
+  z-index: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Glow effect on hover
+.why-me-card:hover .card-title {
+  color: #f2f7f8;
+  text-shadow: 0 0 8px #18191a;
+}
+
+.why-me-card:hover .card-text {
+  color: #a6f0ff;
+} */
+
+/* Animation for fade-in effect */
+.why-me-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.why-me-card:nth-child(1) { animation-delay: 0.1s; }
+.why-me-card:nth-child(2) { animation-delay: 0.2s; }
+.why-me-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+<!---Contact us>
+/* Contact Section Styling */
+.contact-section {
+  position: relative;
+  background-color: #f0f0f0; /* Grey background for the section */
+  padding: 80px 0;
+  color: #333; /* Dark text for better contrast */
+  overflow: hidden;
+}
+
+/* Glass Box Effect */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+  border-radius: 12px;
+  padding:75px;
+  backdrop-filter: blur(10px); /* Glass effect */
+  box-shadow: 0 10px 30px rgba(30, 30, 30, 0.1); /* Soft shadow for floating effect */
+  opacity: 1; /* Fully visible */
+  animation: fadeIn 1s forwards; /* Fade-in animation for initial load */
+}
+
+/* Text Styling */
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  opacity: 1;
+  animation: fadeIn 1s 0.5s forwards; /* Delay to create sequential appearance */
+}
+
+.contact-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  opacity: 50; /* Fully visible */
+  animation: fadeIn 1s 1s forwards;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 1; /* Fully visible */
+  animation: fadeIn 1s 1.5s forwards;
+}
+
+/* Button Styling */
+.btn-custom {
+  background-color: #030303; /* Lighter button background */
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  margin: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1; /* Fully visible */
+  animation: fadeIn 1s 2s forwards;
+}
+
+.btn-custom:hover {
+  background-color: #f3f8fa; /* Darker hover effect */
+  transform: translateY(-5px); /* Slightly lift the button on hover */
+}
+
+/* Email Link Styling */
+.contact-email {
+  font-size: 18px;
+  margin-top: 15px;
+  opacity: 1; /* Fully visible */
+  animation: fadeIn 1s 2.5s forwards;
+}
+
+/* Social Links Section Styling */
+.social-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1; /* Fully visible */
+  animation: fadeIn 1s 3s forwards;
+}
+
+/* Profile Info Section Styling */
+.profile-info {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.profile-info img.profile-img {
+  border-radius: 20%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.profile-info img.profile-img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.profile-info .name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-info .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #010101; /* Link color for better visibility */
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #353535; /* Hover color */
+}
+
+/* Animation for Fade In Effect */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
